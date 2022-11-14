@@ -1,323 +1,309 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-.container{
-    width: 100%;
-    height: 100%;
-    background: #141a34;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.container {
+  width: 100%;
+  height: 100%;
+  background: #141a34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-.container form{
-    width: 90%;
-    max-width: 500px;
-    padding: 50px 30px 20px;
-    background: #fff;
-    border-radius: 4px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-    position: relative;
-    color: #141a34;
+.container form {
+  width: 90%;
+  max-width: 500px;
+  padding: 50px 30px 20px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+  color: #141a34;
 }
-
 
 #plane1 {
-    position: absolute;
-    left: 97%;
-    bottom: 40%;
-    transform: translate(-50%,-50%);
-    background: orangered;
-    font-size: 36px;
-    padding: 15px;
-    border-radius: 10%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transform: rotate(50deg);
+  position: absolute;
+  left: 97%;
+  bottom: 40%;
+  transform: translate(-50%, -50%);
+  background: orangered;
+  font-size: 36px;
+  padding: 15px;
+  border-radius: 10%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: rotate(50deg);
 }
 
 #plane2 {
-    position: absolute;
-    right: 97%;
-    bottom: 40%;
-    transform: translate(-50%,-50%);
-    background: orangered;
-    font-size: 26px;
-    padding: 15px;
-    border-radius: 10%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transform: rotate(-50deg);
+  position: absolute;
+  right: 97%;
+  bottom: 40%;
+  transform: translate(-50%, -50%);
+  background: orangered;
+  font-size: 26px;
+  padding: 15px;
+  border-radius: 10%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: rotate(-50deg);
 }
 
 #planet {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background: orangered;
-    font-size: 130px;
-    padding: 432px;
-    border-radius: 232%;
-    box-shadow: 0 0 10px rgb(232, 97, 12);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: orangered;
+  font-size: 130px;
+  padding: 432px;
+  border-radius: 232%;
+  box-shadow: 0 0 10px rgb(232, 97, 12);
 }
 
-.input-group{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
-    position: relative;
+.input-group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  position: relative;
 }
-.input-group label{
-    flex-basis: 28%;
+.input-group label {
+  flex-basis: 28%;
 }
-.input-group input, .input-group textarea{
-    flex-basis: 68%;
-    background: transparent;
-    border: 0;
-    outline: 0;
-    padding: 10px 0;
-    border-bottom: 1px solid #999;
-    color: #333;
-    font-size: 16px;
+.input-group input,
+.input-group textarea {
+  flex-basis: 68%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #999;
+  color: #333;
+  font-size: 16px;
 }
-::placeholder{
-    font-size: 12px;
+::placeholder {
+  font-size: 12px;
 }
 
-form button{
-    background: #141a34;
-    color: #fff;
-    border-radius: 4px;
-    border: 1px solid rgba(255, 255, 255, 0.7);
-    padding: 10px 40px;
-    outline: 0;
-    cursor: pointer;
-    display: block;
-    margin: 30px auto 10px;
+form button {
+  background: #141a34;
+  color: #fff;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 10px 40px;
+  outline: 0;
+  cursor: pointer;
+  display: block;
+  margin: 30px auto 10px;
 }
 
 .input-group span {
-    position: absolute;
-    bottom: 12px;
-    right: 17px;
-    font-size: 8px;
-    color: grey;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  position: absolute;
+  bottom: 12px;
+  right: 17px;
+  font-size: 8px;
+  color: grey;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-
 .input-group span i {
-    color: seagreen;
-    font-size: 14px;
+  color: seagreen;
+  font-size: 14px;
 }
 
 p {
-    text-align: center;
+  text-align: center;
 }
 
 .sydney {
-    font-size: smaller;
-    float: left;
-    margin-right: 6%;
-    margin-left: 20%;
-    position: relative;
+  font-size: smaller;
+  float: left;
+  margin-right: 6%;
+  margin-left: 20%;
+  position: relative;
 }
 
 .melbourne {
-    font-size: smaller;
-    float: left;
-    margin-right: 6%;
+  font-size: smaller;
+  float: left;
+  margin-right: 6%;
 }
 
 .brisbane {
-    font-size: smaller;
-    float: left;
-    margin-right: 6%;
+  font-size: smaller;
+  float: left;
+  margin-right: 6%;
 }
 
 .perth {
-    font-size: smaller;
+  font-size: smaller;
 }
 
 #error-radio {
-    text-align: center;
+  text-align: center;
 }
 
-
 #submit-error {
-    text-align: center;
-    color: red;
-    font-size: 15px;
+  text-align: center;
+  color: red;
+  font-size: 15px;
 }
 
 #confirm {
-    font-size: smaller;
+  font-size: smaller;
 }
 
-input[type='radio']:after {
-    width: 15px;
-    height: 15px;
-    border-radius: 15px;
-    top: -2px;
-    left: -1px;
-    position: relative;
-    background-color: #d1d3d1;
-    content: '';
-    display: inline-block;
-    visibility: visible;
-    
-
-    
+input[type="radio"]:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: "";
+  display: inline-block;
+  visibility: visible;
 }
 
-input[type='radio']:checked:after {
-    width: 15px;
-    height: 15px;
-    border-radius: 5px;
-    top: -2px;
-    left: -1px;
-    position: relative;
-    background-color: #ffa500;
-    content: '';
-    display: inline-block;
-    visibility: visible;
-    border: 0px solid white;
-    transform: rotate(-50deg);
+input[type="radio"]:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #ffa500;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 0px solid white;
+  transform: rotate(-50deg);
 }
-
-
 
 #Sydney {
-    margin-left: 40%;
+  margin-left: 40%;
 }
 
 #Melbourne {
-    margin-left: 40%;
+  margin-left: 40%;
 }
 
 #Brisbane {
-    margin-left: 40%;
+  margin-left: 40%;
 }
 #Perth {
-    margin-left: 2%;
+  margin-left: 2%;
 }
 
 #error-radio {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
-    color: coral;
-    font-size: smaller;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: coral;
+  font-size: smaller;
 }
 
-
-
 #choose {
-    color: #ffa500;
+  color: #ffa500;
 }
 
 #choose2 {
-    color: #ffa500;
-    font-size: 40px;
-    font-stretch: wider;
+  color: #ffa500;
+  font-size: 40px;
+  font-stretch: wider;
 }
 
 #choose3 {
-    color: #ffa500;
-    font-size: 20px;
-    font-stretch: wider;
+  color: #ffa500;
+  font-size: 20px;
+  font-stretch: wider;
 }
 
 #choose4 {
-    font-size: 15px;
-    font-stretch: wider;
-    float: left;
+  font-size: 15px;
+  font-stretch: wider;
+  float: left;
 }
 
 #s {
-    color: #ffa500;
+  color: #ffa500;
 }
 
 #age-error {
-    margin-right: 10%;
+  margin-right: 10%;
 }
 
 .trip {
-    float: left;
-    margin-left: 25%;
-    font-size: smaller;
+  float: left;
+  margin-left: 25%;
+  font-size: smaller;
 }
 
 #oneWay {
-    margin-left: 40%;
-
+  margin-left: 40%;
 }
 
 #roundTrip {
-    margin-left: 40%;
-
+  margin-left: 40%;
 }
 
 .tripdate {
-    float: left;
-    margin-left: 14%;
-    font-size: small;
-
+  float: left;
+  margin-left: 14%;
+  font-size: small;
 }
 
 .tripdate2 {
-    float: left;
-    margin-left: 15%;
-    font-size: small;
-
+  float: left;
+  margin-left: 15%;
+  font-size: small;
 }
 
 #dep {
-    margin-left: 20%;
+  margin-left: 20%;
 }
 
 #ret {
-    margin-left: 25%;
+  margin-left: 25%;
 }
 
 #trip-error {
-    padding-left: 14%;
-    margin-right: 25%;
-    font-size: smaller;
-    color: grey;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-left: 14%;
+  margin-right: 25%;
+  font-size: smaller;
+  color: grey;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 #trip-error2 {
-    padding-left: 10%;
+  padding-left: 10%;
 
-    font-size: smaller;
-    color: grey;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: smaller;
+  color: grey;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 #passengers {
-    float: right;
-   
+  float: right;
 }
 
 #submit {
-    background-color: orangered;
+  background-color: orangered;
 }
 
 #addMorePassengers {
-    color: grey;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: small;
+  color: grey;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: small;
 }
 
 .gender {
-    float: left;
-    margin-left: 29%;
-    font-size: smaller;
+  float: left;
+  margin-left: 29%;
+  font-size: smaller;
 }
-
-
